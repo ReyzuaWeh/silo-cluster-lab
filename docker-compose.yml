@@ -1,0 +1,41 @@
+x-silo: &silo
+  image: ${SILO_IMAGE}
+  command: server http://silo{1...4}/data --console-address ":9001"
+  environment:
+    MINIO_ROOT_USER: ${MINIO_ROOT_USER}
+    MINIO_ROOT_PASSWORD: ${MINIO_ROOT_PASSWORD}
+  mem_limit: 512m
+  restart: unless-stopped
+  networks: [lab]
+
+services:
+  silo1:
+    <<: *silo
+    hostname: silo1
+    volumes: [data1:/data]
+  silo2:
+    <<: *silo
+    hostname: silo2
+    volumes: [data2:/data]
+  silo3:
+    <<: *silo
+    hostname: silo3
+    volumes: [data3:/data]
+  silo4:
+    <<: *silo
+    hostname: silo4
+    volumes: [data4:/data]
+
+  lb:
+    image: ${NGINX_IMAGE}
+    mem_limit: 64m
+    ports:
+      - "127.0.0.1:9000:9000"
+      - "127.0.0.1:9001:9001"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    depends_on: [silo1, silo2, silo3, silo4]
+    networks: [lab]
+
+volumes: {data1: {}, data2: {}, data3: {}, data4: {}}
+networks: {lab: {}}

@@ -1,0 +1,6 @@
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O         PIDS
+b32ed9f9a812   silo-cluster-lb-1      0.00%     5.414MiB / 64MiB    8.46%     12.7kB / 11.2kB   8.64MB / 12.3kB   2
+5452f2162d18   silo-cluster-silo4-1   0.32%     76.73MiB / 512MiB   14.99%    398kB / 354kB     5.26MB / 410kB    10
+78f837786532   silo-cluster-silo2-1   0.18%     74.54MiB / 512MiB   14.56%    394kB / 346kB     2.36MB / 385kB    10
+628013b30830   silo-cluster-silo3-1   0.31%     79.48MiB / 512MiB   15.52%    386kB / 357kB     8.33MB / 5.53MB   10
+4a6e1a9a3da6   silo-cluster-silo1-1   0.81%     71.68MiB / 512MiB   14.00%    483kB / 596kB     11.1MB / 352kB    11

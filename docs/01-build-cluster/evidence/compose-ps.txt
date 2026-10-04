@@ -1,0 +1,6 @@
+NAME                   IMAGE                                                                                                                       COMMAND                  SERVICE   CREATED          STATUS          PORTS
+silo-cluster-lb-1      nginx:stable-alpine3.24-perl                                                                                                "/docker-entrypoint.…"   lb        10 minutes ago   Up 9 minutes    80/tcp, 127.0.0.1:9000-9001->9000-9001/tcp
+silo-cluster-silo1-1   docker.io/pgsty/silo:RELEASE.2026-09-16T00-00-00Z@sha256:635197cb9f36d01bee221d34d1c7d7960f6a95c48b0b6c01d99cd13bdae51a46   "/usr/bin/docker-ent…"   silo1     11 minutes ago   Up 11 minutes   9000/tcp
+silo-cluster-silo2-1   docker.io/pgsty/silo:RELEASE.2026-09-16T00-00-00Z@sha256:635197cb9f36d01bee221d34d1c7d7960f6a95c48b0b6c01d99cd13bdae51a46   "/usr/bin/docker-ent…"   silo2     11 minutes ago   Up 11 minutes   9000/tcp
+silo-cluster-silo3-1   docker.io/pgsty/silo:RELEASE.2026-09-16T00-00-00Z@sha256:635197cb9f36d01bee221d34d1c7d7960f6a95c48b0b6c01d99cd13bdae51a46   "/usr/bin/docker-ent…"   silo3     11 minutes ago   Up 11 minutes   9000/tcp
+silo-cluster-silo4-1   docker.io/pgsty/silo:RELEASE.2026-09-16T00-00-00Z@sha256:635197cb9f36d01bee221d34d1c7d7960f6a95c48b0b6c01d99cd13bdae51a46   "/usr/bin/docker-ent…"   silo4     11 minutes ago   Up 11 minutes   9000/tcp
