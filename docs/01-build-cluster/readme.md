@@ -45,13 +45,13 @@ mcli admin info lab
 - Result    : PASS
 - Evidence  : [evidence/admin-info.txt](./evidence/admin-info.txt)
 
-### 3. Console login
+### 4. Console login
 Open        : http://127.0.0.1:9001 and log in.
 Expected    : dashboard loads.
 Result      : PASS
-Evidence    : [screenshots/console.png](./screenshots/login-to-console.png)
+Evidence    : [screenshots/login-to-console.png](./screenshots/login-to-console.png)
 
-### 4. Memory check
+### 5. Memory check
 ```bash
 docker stats --no-stream
 ```

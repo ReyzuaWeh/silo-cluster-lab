@@ -1,0 +1,13 @@
+HTTP/1.1 200 OK
+Server: nginx/1.30.5
+Date: Thu, 08 Oct 2026 15:00:36 GMT
+Content-Length: 0
+Connection: keep-alive
+Accept-Ranges: bytes
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Vary: Origin
+X-Amz-Id-2: 54c31667870441cc3c87c46b2bda195cd95671ebb87d829d561a9f2773e531c8
+X-Amz-Request-Id: 18DC95F637BF9737
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block
+
