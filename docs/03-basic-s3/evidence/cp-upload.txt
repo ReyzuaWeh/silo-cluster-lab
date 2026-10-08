@@ -1,0 +1,5 @@
+`/work/evidence/obj1.bin` -> `lab/test-bucket/obj1.bin`
+┌───────────┬─────────────┬──────────┬─────────────┐
+│ Total     │ Transferred │ Duration │ Speed       │
+│ 10.00 MiB │ 10.00 MiB   │ 00m00s   │ 29.17 MiB/s │
+└───────────┴─────────────┴──────────┴─────────────┘
