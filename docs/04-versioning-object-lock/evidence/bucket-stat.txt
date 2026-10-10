@@ -1,0 +1,56 @@
+Name      : version-bucket
+Date      : 2026-10-10 15:29:37 UTC 
+Size      : N/A    
+Type      : folder 
+
+Properties:
+  Versioning: Un-versioned
+  Location: us-east-1
+  Anonymous: Disabled
+  ILM: Disabled
+
+Usage:
+      Total size: 0 B
+   Objects count: 0
+  Versions count: 0
+
+Object sizes histogram:
+   0 object(s) BETWEEN_1024B_AND_1_MB
+   0 object(s) BETWEEN_1024_B_AND_64_KB
+   0 object(s) BETWEEN_10_MB_AND_64_MB
+   0 object(s) BETWEEN_128_MB_AND_512_MB
+   0 object(s) BETWEEN_1_MB_AND_10_MB
+   0 object(s) BETWEEN_256_KB_AND_512_KB
+   0 object(s) BETWEEN_512_KB_AND_1_MB
+   0 object(s) BETWEEN_64_KB_AND_256_KB
+   0 object(s) BETWEEN_64_MB_AND_128_MB
+   0 object(s) GREATER_THAN_512_MB
+   0 object(s) LESS_THAN_1024_B
+Name      : lock-bucket
+Date      : 2026-10-10 15:29:47 UTC 
+Size      : N/A    
+Type      : folder 
+
+Properties:
+  Versioning: Enabled
+  Location: us-east-1
+  Anonymous: Disabled
+  ILM: Disabled
+
+Usage:
+      Total size: 0 B
+   Objects count: 0
+  Versions count: 0
+
+Object sizes histogram:
+   0 object(s) BETWEEN_1024B_AND_1_MB
+   0 object(s) BETWEEN_1024_B_AND_64_KB
+   0 object(s) BETWEEN_10_MB_AND_64_MB
+   0 object(s) BETWEEN_128_MB_AND_512_MB
+   0 object(s) BETWEEN_1_MB_AND_10_MB
+   0 object(s) BETWEEN_256_KB_AND_512_KB
+   0 object(s) BETWEEN_512_KB_AND_1_MB
+   0 object(s) BETWEEN_64_KB_AND_256_KB
+   0 object(s) BETWEEN_64_MB_AND_128_MB
+   0 object(s) GREATER_THAN_512_MB
+   0 object(s) LESS_THAN_1024_B

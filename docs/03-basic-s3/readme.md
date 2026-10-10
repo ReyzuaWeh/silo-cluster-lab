@@ -22,6 +22,7 @@ docker run --rm -i --network silo-cluster_lab \
     -v "$PWD:/work" -w /work \
     --entrypoint mcli "$SILO_IMAGE" --config-dir /cfg "$@"
 }
+mcli alias set lab http://lb:9000 "$MINIO_ROOT_USER" "$MINIO_ROOT_PASSWORD"
 ```
 
 ### Create File
@@ -31,7 +32,7 @@ docker run --rm -i --network silo-cluster_lab \
     sha256sum objects/obj-1200m.bin | tee evidence/checksum-before.txt
 ```
 - Expected: files are created and the hashes are recorded.
-- Actual: [evidence/checksum-before.txt](./evidence/checksum-before.txt)
+- Evidence: [evidence/checksum-before.txt](./evidence/checksum-before.txt)
 - Result: PASS
 
 > **NOTE** : You may use other method like real file but we can just use it for simple test
@@ -42,7 +43,7 @@ docker run --rm -i --network silo-cluster_lab \
     mcli mb lab/test-bucket
 ```
 - Expected: `Bucket created successfully`
-- Actual: [evidence/create-bucket.txt](./evidence/create-bucket.txt)
+- Evidence: [evidence/create-bucket.txt](./evidence/create-bucket.txt)
 - Result: PASS
 
 ### Upload Object to Bucket
@@ -52,7 +53,7 @@ docker run --rm -i --network silo-cluster_lab \
     mcli cp ./objects/obj-1200m.bin lab/test-bucket/obj-1200m.bin
 ```
 - Expected: 1.17 GiB transferred, no OOM-kill on any node.
-- Actual: 1.17 GiB in 00m13s (87.96 MiB/s). [evidence/cp-upload.txt](./evidence/cp-upload.txt)
+- Evidence: 1.17 GiB in 00m13s (87.96 MiB/s). [evidence/cp-upload.txt](./evidence/cp-upload.txt)
 - Result: PASS
 
 #### Presigned URL
@@ -63,7 +64,7 @@ docker run --rm -i --network silo-cluster_lab \
     sha256sum /tmp/presigned.bin
 ```
 - Expected: `HTTP 200`
-- Actual: [evidence/presigned-curl.txt](./evidence/presigned-curl.txt), [evidence/presigned-checksum-after.txt](./evidence/presigned-checksum-after.txt)
+- Evidence: [evidence/presigned-curl.txt](./evidence/presigned-curl.txt), [evidence/presigned-checksum-after.txt](./evidence/presigned-checksum-after.txt)
 - Result: PASS 
 - Note: the URL is never stored (`X-Amz-Credential=<REDACTED>`, `X-Amz-Signature=<REDACTED>`).
 
@@ -76,7 +77,7 @@ docker run --rm -i --network silo-cluster_lab \
     mcli tag list lab/test-bucket/obj-10m-custom.bin
 ```
 - Expected: `stat` shows `X-Amz-Meta-Project` and `X-Amz-Meta-Owner` after using `tag list`
-- Actual: [evidence/obj-custom-stat.txt](./evidence/obj-custom-stat.txt), [evidence/obj-tags.txt](./evidence/obj-tags.txt)
+- Evidence: [evidence/obj-custom-stat.txt](./evidence/obj-custom-stat.txt), [evidence/obj-tags.txt](./evidence/obj-tags.txt)
 - Result: PASS
 
 ### List Buckets and Objects
@@ -86,7 +87,7 @@ docker run --rm -i --network silo-cluster_lab \
     mcli ls lab/test-bucket
 ```
 - Expected: `test-bucket` and the uploaded objects are listed.
-- Actual: [evidence/ls-buckets.txt](./evidence/ls-buckets.txt), [evidence/ls-objects.txt](./evidence/ls-objects.txt)
+- Evidence: [evidence/ls-buckets.txt](./evidence/ls-buckets.txt), [evidence/ls-objects.txt](./evidence/ls-objects.txt)
 - Result: PASS
 
 ### Download Object from Bucket
@@ -97,7 +98,7 @@ docker run --rm -i --network silo-cluster_lab \
   { [ "$(cut -d' ' -f1 evidence/checksum-before.txt)" = "$(cut -d' ' -f1 evidence/checksum-after.txt)" ] && echo MATCH || echo MISMATCH; } | tee evidence/checksum-compare.txt
 ```
 - Expected: `MATCH`
-- Actual: [evidence/cp-download.txt](./evidence/cp-download.txt), [evidence/checksum-compare.txt](./evidence/checksum-compare.txt) (MATCH)
+- Evidence: [evidence/cp-download.txt](./evidence/cp-download.txt), [evidence/checksum-compare.txt](./evidence/checksum-compare.txt) (MATCH)
 - Result: PASS
 
 ### Verify Checksum (mcli checksum verify)
@@ -106,10 +107,9 @@ docker run --rm -i --network silo-cluster_lab \
     mcli checksum verify lab/test-bucket/<object>
 ```
 - Expected: `1 verified, 1 match, 0 mismatch`
-- Actual:
+- Evidence:
   - Uploaded without checksum: `NO_CHECKSUM` (0 verified)
   - 1.2 GB object with `--checksum SHA256`: `UNKNOWN_UNSUPPORTED_COMPOSITE` (0 verified)
-  - 
 - Result: FAIL for the first time, PASS after that. See [Findings](#findings).
 
 ### Delete Object from Bucket
@@ -119,7 +119,7 @@ mcli rm lab/test-bucket/obj-10m.bin
 mcli ls lab/test-bucket
 ```
 - Expected: the object is removed and the listing is empty.
-- Actual: `evidence/rm.txt`
+- Evidence: `evidence/rm.txt`
 - Result: PASS
 
 ### Using SDK (Boto3)
