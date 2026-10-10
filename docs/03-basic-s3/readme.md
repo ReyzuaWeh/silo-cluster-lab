@@ -173,6 +173,7 @@ Result for each SDK step: PASS, evidence:
 
 - Presigned URL load host `lb:9000`, so you have to use `--connect-to`.
 - Result 4 GB RAM: no OOM-kill when upload 1.2 GB but it's using dummy.
+- You can't upload 1GB object to github
 
 ## How to reproduce and clean up
 Same as [Past Configuration](../02-healthcheck/readme.md#how-to-reproduce-and-clean-up)
