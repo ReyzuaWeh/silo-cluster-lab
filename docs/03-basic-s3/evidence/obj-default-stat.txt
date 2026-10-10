@@ -1,0 +1,9 @@
+Name      : obj-10m.bin
+Date      : 2026-10-10 08:15:38 UTC 
+Size      : 10 MiB 
+ETag      : f8ecae034a06d259f6caa724a3c8d647 
+Type      : file 
+Checksum  : SHA256:6T4xJpq9COAUA4o6usyOghvS8tpGEN16BmzVtJqpHus=
+Metadata  :
+  Content-Type: application/octet-stream 
+

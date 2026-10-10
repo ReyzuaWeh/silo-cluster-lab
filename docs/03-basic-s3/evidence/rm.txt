@@ -1,0 +1,1 @@
+Removed `lab/test-bucket/obj-1200m.bin`.

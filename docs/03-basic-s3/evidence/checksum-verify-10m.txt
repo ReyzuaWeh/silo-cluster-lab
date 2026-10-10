@@ -1,0 +1,2 @@
+MATCH                                  lab/test-bucket/obj-10m.bin
+Checksum verification: 1 objects, 1 verified, 1 match, 0 mismatch, 0 no-checksum, 0 unknown, 0 skipped, 10 MiB read

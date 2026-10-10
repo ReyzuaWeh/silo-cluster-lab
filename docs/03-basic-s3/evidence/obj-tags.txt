@@ -1,0 +1,3 @@
+Name : http://lb:9000/test-bucket/obj-10m-custom.bin
+env  : lab
+tier : test

@@ -1,5 +1,5 @@
-`lab/test-bucket/obj1.bin` -> `evidence/obj1.download.bin`
-┌───────────┬─────────────┬──────────┬──────────────┐
-│ Total     │ Transferred │ Duration │ Speed        │
-│ 10.00 MiB │ 10.00 MiB   │ 00m00s   │ 148.27 MiB/s │
-└───────────┴─────────────┴──────────┴──────────────┘
+`lab/test-bucket/obj-1200m.bin` -> `obj-1200m.download.bin`
+┌──────────┬─────────────┬──────────┬──────────────┐
+│ Total    │ Transferred │ Duration │ Speed        │
+│ 1.17 GiB │ 1.17 GiB    │ 00m09s   │ 126.58 MiB/s │
+└──────────┴─────────────┴──────────┴──────────────┘
