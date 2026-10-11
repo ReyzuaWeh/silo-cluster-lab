@@ -1,1 +1,2 @@
 Bucket created successfully `lab/version-bucket`.
+lab/version-bucket versioning is enabled

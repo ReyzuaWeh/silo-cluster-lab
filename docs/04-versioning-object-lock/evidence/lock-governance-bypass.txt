@@ -1,0 +1,1 @@
+Removed `lab/lock-bucket/obj-first-version.bin` (versionId=3f8445f9-a59b-4957-bee2-364d71623766).

@@ -1,0 +1,1 @@
+mcli: <ERROR> Failed to remove `lab/lock-bucket/obj-first-version.bin`. Object, 'obj-first-version.bin (Version ID=3f8445f9-a59b-4957-bee2-364d71623766)' is WORM protected and cannot be overwritten

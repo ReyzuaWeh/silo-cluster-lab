@@ -1,0 +1,1 @@
+Removed `lab/version-bucket/obj-first-version.bin` (versionId=4f0780e2-81cf-4844-8d88-1434d67ad07c).

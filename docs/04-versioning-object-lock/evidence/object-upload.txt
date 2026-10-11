@@ -1,0 +1,10 @@
+`/work/objects/obj-first-version.bin` -> `lab/version-bucket/obj-first-version.bin`
+┌───────┬─────────────┬──────────┬─────────┐
+│ Total │ Transferred │ Duration │ Speed   │
+│ 10 B  │ 10 B        │ 00m00s   │ 426 B/s │
+└───────┴─────────────┴──────────┴─────────┘
+`/work/objects/obj-first-version.bin` -> `lab/lock-bucket/obj-first-version.bin`
+┌───────┬─────────────┬──────────┬─────────┐
+│ Total │ Transferred │ Duration │ Speed   │
+│ 10 B  │ 10 B        │ 00m00s   │ 471 B/s │
+└───────┴─────────────┴──────────┴─────────┘

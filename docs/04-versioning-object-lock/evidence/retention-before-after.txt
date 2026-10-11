@@ -1,0 +1,2 @@
+Object locking is not enabled.
+Object locking 'GOVERNANCE' is configured for 1DAYS.

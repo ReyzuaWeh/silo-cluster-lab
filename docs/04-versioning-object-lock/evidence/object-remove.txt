@@ -1,0 +1,2 @@
+Created delete marker `lab/version-bucket/obj-first-version.bin` (versionId=4e7fb69c-7fbf-4e9c-bf6f-07ae3f1e62db).
+Created delete marker `lab/lock-bucket/obj-first-version.bin` (versionId=738aa7dc-dafa-4370-b44a-b08548f957ba).
