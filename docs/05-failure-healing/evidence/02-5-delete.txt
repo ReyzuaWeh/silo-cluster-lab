@@ -1,0 +1,6 @@
+mcli: <ERROR> Failed to remove `lab/fail-bucket/obj-10m.bin`. Resource requested is unwritable, please reduce your request rate
+mcli: <ERROR> Failed to remove `lab/fail-bucket/obj-10m.bin`. Object does not exist
+mcli: <ERROR> Failed to remove `lab/fail-bucket/obj-10m.bin`. Object does not exist
+mcli: <ERROR> Failed to remove `lab/fail-bucket/obj-10m.bin`. Object does not exist
+mcli: <ERROR> Failed to remove `lab/fail-bucket/obj-10m.bin`. Object does not exist
+mcli: <ERROR> Failed to remove `lab/fail-bucket/obj-10m.bin`. Object does not exist

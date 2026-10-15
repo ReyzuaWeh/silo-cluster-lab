@@ -1,0 +1,35 @@
+●  silo1:9000
+   Uptime: 43 minutes 
+   Version: 2026-09-16T00:00:00Z
+   Network: 4/4 OK 
+   Drives: 1/1 OK 
+   Pool: 1
+
+●  silo2:9000
+   Uptime: 43 minutes 
+   Version: 2026-09-16T00:00:00Z
+   Network: 4/4 OK 
+   Drives: 1/1 OK 
+   Pool: 1
+
+●  silo3:9000
+   Uptime: 43 minutes 
+   Version: 2026-09-16T00:00:00Z
+   Network: 4/4 OK 
+   Drives: 1/1 OK 
+   Pool: 1
+
+●  silo4:9000
+   Uptime: 43 minutes 
+   Version: 2026-09-16T00:00:00Z
+   Network: 4/4 OK 
+   Drives: 1/1 OK 
+   Pool: 1
+
+┌──────┬────────────────────────┬─────────────────────┬──────────────┐
+│ Pool │ Drives Usage           │ Erasure stripe size │ Erasure sets │
+│ 1st  │ 56.8% (total: 454 GiB) │ 4                   │ 1            │
+└──────┴────────────────────────┴─────────────────────┴──────────────┘
+
+1.2 GiB Used, 5 Buckets, 6 Objects, 4 Versions
+4 drives online, 0 drives offline, EC:2

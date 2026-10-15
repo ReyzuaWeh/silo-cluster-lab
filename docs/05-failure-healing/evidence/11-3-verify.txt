@@ -1,0 +1,3 @@
+MATCH                                  lab/fail-bucket/obj-10m.bin
+Checksum verification: 1 objects, 1 verified, 1 match, 0 mismatch, 0 no-checksum, 0 unknown, 0 skipped, 10 MiB read
+[2026-10-15 12:19:32 UTC]  10MiB STANDARD obj-10m.bin

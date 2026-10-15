@@ -3,9 +3,9 @@
 To ensure MinIO is healthy and running, we will use the healthcheck feature in Docker Compose. This will allow us to monitor the health of the MinIO service and take appropriate actions if it becomes unhealthy
 
 ## Environment
-- Images : [Silo and NGINX as Load Balancer](./evidence/compose-ps.txt)
-- Docker and Docker Compose versions : [Docker and Docker Compose Versions](../01-build-cluster/evidence/docker-versions.txt)
-- OS : [Nix and NixOS Version](../01-build-cluster/evidence/nix-version.txt)
+- Images : [Silo and NGINX as Load Balancer](../01-build-cluster/evidence/compose-ps.txt)
+- Docker and Docker Compose versions : [Docker and Docker Compose Versions](../01-build-cluster/evidence/docker-version.txt)
+- OS : [Nix and NixOS Version](../01-build-cluster/evidence/local-os-version.txt)
 - Topology :
     - Profile C (more small machines, 4GB RAM and 8GB Swap): 4 nodes x 1 drive [Topology](../01-build-cluster/evidence/free-h.txt)
 - Date : 08 Oct 2026

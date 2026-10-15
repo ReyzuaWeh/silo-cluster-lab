@@ -1,0 +1,2 @@
+mcli: <ERROR> Unable to initialize new alias from the provided credentials. Resource requested is unwritable, please reduce your request rate.
+mcli: <ERROR> Unable to prepare URL for copying. Resource requested is unwritable, please reduce your request rate

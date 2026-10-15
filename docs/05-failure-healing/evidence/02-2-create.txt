@@ -1,0 +1,2 @@
+`/work/objects/obj-10m.bin` -> `lab/fail-bucket/2-node-offline.bin`
+mcli: <ERROR> Failed to copy `/work/objects/obj-10m.bin`. Resource requested is unwritable, please reduce your request rate

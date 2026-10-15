@@ -1,0 +1,18 @@
+.
+..
+.minio.sys
+fail-bucket
+lock-bucket
+locked-bucket
+sdk-bucket
+test-bucket
+.
+..
+obj-10m.bin
+[2026-10-15 07:34:22 UTC]     0B fail-bucket/
+[2026-10-11 09:56:49 UTC]     0B lock-bucket/
+[2026-10-11 13:55:24 UTC]     0B locked-bucket/
+[2026-10-10 12:07:18 UTC]     0B sdk-bucket/
+[2026-10-08 16:26:03 UTC]     0B test-bucket/
+MATCH                                  lab/fail-bucket/obj-10m.bin
+Checksum verification: 1 objects, 1 verified, 1 match, 0 mismatch, 0 no-checksum, 0 unknown, 0 skipped, 10 MiB read

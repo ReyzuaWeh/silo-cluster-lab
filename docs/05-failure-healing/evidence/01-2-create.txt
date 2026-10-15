@@ -1,0 +1,5 @@
+`/work/objects/obj-10m.bin` -> `lab/fail-bucket/1-node-offline.bin`
+┌───────────┬─────────────┬──────────┬─────────────┐
+│ Total     │ Transferred │ Duration │ Speed       │
+│ 10.00 MiB │ 10.00 MiB   │ 00m00s   │ 45.23 MiB/s │
+└───────────┴─────────────┴──────────┴─────────────┘
