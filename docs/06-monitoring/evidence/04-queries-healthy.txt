@@ -1,0 +1,10 @@
+{"status":"success","data":{"resultType":"vector","result":[{"metric":{"__name__":"minio_cluster_capacity_usable_total_bytes","instance":"lb:9000","job":"minio-job","server":"silo1:9000"},"value":[1792417187.396,"487535116288"]}]}}
+{"status":"success","data":{"resultType":"vector","result":[{"metric":{"__name__":"minio_cluster_capacity_usable_free_bytes","instance":"lb:9000","job":"minio-job","server":"silo1:9000"},"value":[1792417187.418,"210503475200"]}]}}
+{"status":"success","data":{"resultType":"vector","result":[{"metric":{"instance":"lb:9000","job":"minio-job","server":"silo1:9000"},"value":[1792417187.437,"277031641088"]}]}}
+{"status":"success","data":{"resultType":"vector","result":[{"metric":{"__name__":"minio_cluster_usage_total_bytes","instance":"lb:9000","job":"minio-job","server":"silo1:9000"},"value":[1792417187.454,"1289748538"]}]}}
+{"status":"success","data":{"resultType":"vector","result":[{"metric":{"__name__":"minio_cluster_nodes_online_total","instance":"lb:9000","job":"minio-job","server":"silo1:9000"},"value":[1792417187.475,"4"]}]}}
+{"status":"success","data":{"resultType":"vector","result":[{"metric":{"__name__":"minio_cluster_drive_online_total","instance":"lb:9000","job":"minio-job","server":"silo1:9000"},"value":[1792417187.496,"4"]}]}}
+{"status":"success","data":{"resultType":"vector","result":[]}}
+{"status":"success","data":{"resultType":"vector","result":[]}}
+{"status":"success","data":{"resultType":"vector","result":[{"metric":{"__name__":"minio_cluster_health_erasure_set_healing_drives","instance":"lb:9000","job":"minio-job","pool":"0","server":"silo1:9000","set":"0"},"value":[1792417187.548,"0"]}]}}
+{"status":"success","data":{"resultType":"vector","result":[{"metric":{"__name__":"minio_cluster_health_status","instance":"lb:9000","job":"minio-job","server":"silo1:9000"},"value":[1792417187.565,"1"]}]}}

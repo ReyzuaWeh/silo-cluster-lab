@@ -31,6 +31,16 @@ services:
     <<: *silo
     hostname: silo4
     volumes: [data4:/data]
+  
+  prometheus:
+    image: ${PROMETHEUS_IMAGE}
+    mem_limit: 256m
+    volumes:
+      - ./monitoring/prometheus.generated.yml:/etc/prometheus/prometheus.yml:ro
+      - ./monitoring/alerts.yml:/etc/prometheus/alerts.yml:ro
+    ports:
+      - "127.0.0.1:9090:9090"
+    networks: [lab]
 
   lb:
     image: ${NGINX_IMAGE}

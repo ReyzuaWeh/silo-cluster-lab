@@ -1,0 +1,26 @@
+groups:
+- name: silo
+  rules:
+  - alert: SiloDriveOffline
+    expr: minio_cluster_drive_offline_total > 0
+    for: 1m
+    labels: {severity: critical}
+  - alert: SiloNodeOffline
+    expr: minio_cluster_nodes_offline_total > 0
+    for: 1m
+    labels: {severity: critical}
+  - alert: SiloS3Errors
+    expr: sum(rate(minio_s3_requests_errors_total[5m])) > 0.1
+    for: 5m
+    labels: {severity: warning}
+  - alert: SiloCapacityLow
+    expr: minio_cluster_capacity_usable_free_bytes / minio_cluster_capacity_usable_total_bytes < 0.2
+    for: 10m
+    labels: {severity: warning}
+  - alert: SiloRequestsWaiting
+    expr: minio_s3_requests_waiting_total > 10
+    for: 5m
+    labels: {severity: warning}
+  - alert: SiloHealErrors
+    expr: increase(minio_heal_objects_error_total[10m]) > 0
+    labels: {severity: warning}

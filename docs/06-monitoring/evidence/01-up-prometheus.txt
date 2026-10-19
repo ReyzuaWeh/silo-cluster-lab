@@ -1,0 +1,4 @@
+ Container silo-cluster-prometheus-1 Creating 
+ Container silo-cluster-prometheus-1 Created 
+ Container silo-cluster-prometheus-1 Starting 
+ Container silo-cluster-prometheus-1 Started 

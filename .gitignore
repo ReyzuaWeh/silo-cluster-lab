@@ -5,3 +5,4 @@ venv/
 __pycache__/
 obj-1200m.bin
 obj-1200m.download.bin
+prometheus.generated.yml
