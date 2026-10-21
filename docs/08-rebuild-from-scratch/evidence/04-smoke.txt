@@ -1,0 +1,13 @@
+88ee5876b7eea9013d94d50c6681f1750c8b20a48fc885d2c1412db429eeb653  objects/rebuild.txt
+Bucket created successfully `lab/rebuild-test`.
+`/work/objects/rebuild.txt` -> `lab/rebuild-test/rebuild.txt`
+┌───────┬─────────────┬──────────┬─────────┐
+│ Total │ Transferred │ Duration │ Speed   │
+│ 13 B  │ 13 B        │ 00m00s   │ 564 B/s │
+└───────┴─────────────┴──────────┴─────────┘
+`lab/rebuild-test/rebuild.txt` -> `objects/rebuild.out`
+┌───────┬─────────────┬──────────┬──────────┐
+│ Total │ Transferred │ Duration │ Speed    │
+│ 13 B  │ 13 B        │ 00m00s   │ 1014 B/s │
+└───────┴─────────────┴──────────┴──────────┘
+88ee5876b7eea9013d94d50c6681f1750c8b20a48fc885d2c1412db429eeb653  objects/rebuild.out

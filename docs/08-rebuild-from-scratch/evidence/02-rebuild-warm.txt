@@ -1,0 +1,100 @@
+== START 2026-10-21T21:49:47+07:00
+ Container silo-cluster-prometheus-1 Stopping 
+ Container silo-cluster-lb-1 Stopping 
+ Container silo-cluster-lb-1 Stopped 
+ Container silo-cluster-lb-1 Removing 
+ Container silo-cluster-prometheus-1 Stopped 
+ Container silo-cluster-prometheus-1 Removing 
+ Container silo-cluster-lb-1 Removed 
+ Container silo-cluster-silo2-1 Stopping 
+ Container silo-cluster-silo4-1 Stopping 
+ Container silo-cluster-silo1-1 Stopping 
+ Container silo-cluster-silo3-1 Stopping 
+ Container silo-cluster-prometheus-1 Removed 
+ Container silo-cluster-silo1-1 Stopped 
+ Container silo-cluster-silo1-1 Removing 
+ Container silo-cluster-silo4-1 Stopped 
+ Container silo-cluster-silo4-1 Removing 
+ Container silo-cluster-silo2-1 Stopped 
+ Container silo-cluster-silo2-1 Removing 
+ Container silo-cluster-silo3-1 Stopped 
+ Container silo-cluster-silo3-1 Removing 
+ Container silo-cluster-silo1-1 Removed 
+ Container silo-cluster-silo4-1 Removed 
+ Container silo-cluster-silo3-1 Removed 
+ Container silo-cluster-silo2-1 Removed 
+ Volume silo-cluster_data2 Removing 
+ Volume silo-cluster_data1 Removing 
+ Volume silo-cluster_data3 Removing 
+ Volume silo-cluster_data4 Removing 
+ Network silo-cluster_lab Removing 
+ Volume silo-cluster_data2 Removed 
+ Volume silo-cluster_data3 Removed 
+ Volume silo-cluster_data4 Removed 
+ Volume silo-cluster_data1 Removed 
+ Network silo-cluster_lab Removed 
+ Network silo-cluster_lab Creating 
+ Network silo-cluster_lab Created 
+ Volume silo-cluster_data1 Creating 
+ Volume silo-cluster_data1 Created 
+ Volume silo-cluster_data2 Creating 
+ Volume silo-cluster_data2 Created 
+ Volume silo-cluster_data3 Creating 
+ Volume silo-cluster_data3 Created 
+ Volume silo-cluster_data4 Creating 
+ Volume silo-cluster_data4 Created 
+ Container silo-cluster-prometheus-1 Creating 
+ Container silo-cluster-silo2-1 Creating 
+ Container silo-cluster-silo3-1 Creating 
+ Container silo-cluster-silo4-1 Creating 
+ Container silo-cluster-silo1-1 Creating 
+ Container silo-cluster-silo4-1 Created 
+ Container silo-cluster-silo3-1 Created 
+ Container silo-cluster-silo2-1 Created 
+ Container silo-cluster-silo1-1 Created 
+ Container silo-cluster-lb-1 Creating 
+ Container silo-cluster-prometheus-1 Created 
+ Container silo-cluster-lb-1 Created 
+ Container silo-cluster-prometheus-1 Starting 
+ Container silo-cluster-silo2-1 Starting 
+ Container silo-cluster-silo4-1 Starting 
+ Container silo-cluster-silo1-1 Starting 
+ Container silo-cluster-silo3-1 Starting 
+ Container silo-cluster-silo4-1 Started 
+ Container silo-cluster-silo2-1 Started 
+ Container silo-cluster-silo1-1 Started 
+ Container silo-cluster-prometheus-1 Started 
+ Container silo-cluster-silo3-1 Started 
+ Container silo-cluster-silo2-1 Waiting 
+ Container silo-cluster-silo3-1 Waiting 
+ Container silo-cluster-silo4-1 Waiting 
+ Container silo-cluster-silo1-1 Waiting 
+ Container silo-cluster-silo4-1 Healthy 
+ Container silo-cluster-silo3-1 Healthy 
+ Container silo-cluster-silo2-1 Healthy 
+ Container silo-cluster-silo1-1 Healthy 
+ Container silo-cluster-lb-1 Starting 
+ Container silo-cluster-lb-1 Started 
+ Container silo-cluster-lb-1 Waiting 
+ Container silo-cluster-silo1-1 Waiting 
+ Container silo-cluster-silo2-1 Waiting 
+ Container silo-cluster-silo3-1 Waiting 
+ Container silo-cluster-silo4-1 Waiting 
+ Container silo-cluster-prometheus-1 Waiting 
+ Container silo-cluster-silo2-1 Healthy 
+ Container silo-cluster-silo1-1 Healthy 
+ Container silo-cluster-prometheus-1 Healthy 
+ Container silo-cluster-silo4-1 Healthy 
+ Container silo-cluster-silo3-1 Healthy 
+ Container silo-cluster-lb-1 Healthy 
+== READY 2026-10-21T21:50:07+07:00
+== ELAPSED 20 s
+NAME                        IMAGE                                                                                                                       COMMAND                  SERVICE      CREATED          STATUS                    PORTS
+silo-cluster-lb-1           nginx:stable-alpine3.24-perl                                                                                                "/docker-entrypoint.…"   lb           18 seconds ago   Up 5 seconds (healthy)    80/tcp, 127.0.0.1:9000-9001->9000-9001/tcp
+silo-cluster-prometheus-1   prom/prometheus:v3.13.4-distroless                                                                                          "/bin/prometheus --c…"   prometheus   18 seconds ago   Up 17 seconds             127.0.0.1:9090->9090/tcp
+silo-cluster-silo1-1        docker.io/pgsty/silo:RELEASE.2026-09-16T00-00-00Z@sha256:635197cb9f36d01bee221d34d1c7d7960f6a95c48b0b6c01d99cd13bdae51a46   "/usr/bin/docker-ent…"   silo1        18 seconds ago   Up 17 seconds (healthy)   9000/tcp
+silo-cluster-silo2-1        docker.io/pgsty/silo:RELEASE.2026-09-16T00-00-00Z@sha256:635197cb9f36d01bee221d34d1c7d7960f6a95c48b0b6c01d99cd13bdae51a46   "/usr/bin/docker-ent…"   silo2        18 seconds ago   Up 17 seconds (healthy)   9000/tcp
+silo-cluster-silo3-1        docker.io/pgsty/silo:RELEASE.2026-09-16T00-00-00Z@sha256:635197cb9f36d01bee221d34d1c7d7960f6a95c48b0b6c01d99cd13bdae51a46   "/usr/bin/docker-ent…"   silo3        18 seconds ago   Up 17 seconds (healthy)   9000/tcp
+silo-cluster-silo4-1        docker.io/pgsty/silo:RELEASE.2026-09-16T00-00-00Z@sha256:635197cb9f36d01bee221d34d1c7d7960f6a95c48b0b6c01d99cd13bdae51a46   "/usr/bin/docker-ent…"   silo4        18 seconds ago   Up 17 seconds (healthy)   9000/tcp
+live:200
+cluster:200
