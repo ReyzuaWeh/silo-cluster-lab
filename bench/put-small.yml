@@ -1,0 +1,19 @@
+warp:
+  api: v1
+  benchmark: put
+  no-color: true
+
+  remote:
+    region: us-east-1
+    access-key: '{{.AK}}'
+    secret-key: '{{.SK}}'
+    host:
+      - '{{.HOST}}'
+    tls: false
+    bucket: warp-bench
+
+  params:
+    duration: 1m
+    concurrent: 8
+    obj:
+      size: 64KiB

@@ -62,6 +62,20 @@ services:
       retries: 3
       start_period: 10s
     networks: [lab]
+  warp:
+    image: ${WARP_IMAGE}
+    profiles: ["bench"]
+    mem_limit: 512m
+    networks: [lab]
+    volumes:
+      - ./bench:/bench:ro
+    depends_on:
+      lb: {condition: service_healthy}
+    command: >
+      run /bench/${BENCH:-put-small}.yml
+      -var AK=${MINIO_ROOT_USER}
+      -var SK=${MINIO_ROOT_PASSWORD}
+      -var HOST=lb:9000
 
 volumes: {data1: {}, data2: {}, data3: {}, data4: {}}
 networks: {lab: {}}
