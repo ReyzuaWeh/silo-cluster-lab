@@ -12,7 +12,6 @@ Run warp for small-object PUT/GET and large-object PUT/GET (3 runs each) against
 - Topology :
     - Profile C (more small machines, 4GB RAM and 8GB Swap): 4 nodes x 1 drive [Topology](../01-build-cluster/evidence/free-h.txt)
 - Warp: `quay.io/minio/aistor/warp:v1.8.2`, run as a Compose service (profile `bench`) on the same Docker network as the cluster, targeting the load balancer (`lb:9000`), TLS off.
-- Bucket: `warp-bench` (dedicated; warp wipes it before and after each run).
 - Date : 21 October 2026
 
 Benchmark parameters (from `bench/*.yml`):
